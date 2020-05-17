@@ -195,11 +195,6 @@ span {
   display: flex;
   margin: auto;
   flex-direction: column;
-  /* transform: translateX(-50%);
-  z-index: 0;
-  top: 35%;
-  left: 50%; */
-  /* position: sticky; */
 }
 
 .landing-name-wrapper {
