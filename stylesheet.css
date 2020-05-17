@@ -1315,11 +1315,11 @@ span {
 
   .listed-wrapper {
     width: 100%;
-    margin: 5% auto;
+    margin: 3% auto;
   }
 
   .listed-header {
-    margin: auto auto auto 15%;
+    margin: auto auto auto 10%;
   }
 
   .listed-items ul {
