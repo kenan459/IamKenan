@@ -1088,7 +1088,7 @@ span {
   color: white;
 }
 
-/* Mobile View Top */
+/* Mobile View Begin */
 
 /* Low Res Laptop */
 @media screen and (max-height: 768px) {
@@ -1142,10 +1142,6 @@ span {
 
 /* Ipad-Mobile Res */
 @media screen and (max-width: 1024px) {
-  /* header {
-    display: none;
-  } */
-
   .nav-wrapper-links {
     position: absolute;
     right: 0px;
@@ -1288,7 +1284,7 @@ span {
   }
 
   #skills-section {
-    height: 160vh;
+    height: 260vh;
   }
 
   #skills-flex-wrapper {
