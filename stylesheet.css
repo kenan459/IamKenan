@@ -1302,8 +1302,8 @@ span {
   }
 
   .dev-items ul {
-    /* margin: auto 10%; */
-    /* justify-content: space-around; */
+    margin: 0% auto;
+    justify-content: space-around;
   }
   .dev-items li {
     --item-size: 70px;
