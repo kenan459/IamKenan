@@ -1298,7 +1298,7 @@ span {
   }
 
   .dev-header {
-    margin: auto;
+    margin: 0% auto;
   }
 
   .dev-items ul {
@@ -1454,6 +1454,194 @@ span {
     width: auto;
     height: 100%;
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 1024px) and (orientation: Landscape) {
+  .nav-wrapper li {
+    display: flex;
+    flex: column;
+    margin: 15% auto;
+  }
+
+  .landing-name {
+    font-size: 70px;
+  }
+
+  .pos {
+    font-size: 15px;
+  }
+
+  #intro-section {
+    height: 200vh;
+  }
+  .my-pic {
+    width: 80%;
+  }
+  .intro-wrapper {
+    margin: 80% auto auto auto;
+  }
+
+  .name {
+    font-size: 45px;
+  }
+
+  .intro-txt {
+    font-size: 18px;
+  }
+
+  .listed-header {
+    margin: auto;
+  }
+  .dev-items ul {
+    margin: 2% auto;
+    width: 36%;
+  }
+
+  .listed-wrapper {
+    width: 50%;
+    margin: 1% auto;
+  }
+
+  .exper-date {
+    top: -170px;
+  }
+
+  .date-left {
+    top: -150px;
+  }
+  .exper-divider {
+    top: 31%;
+  }
+
+  #projects-section {
+    height: 250vh;
+  }
+}
+
+@media screen and (max-width: 736px) and (orientation: Landscape) {
+  .nav-wrapper {
+    height: 10vh;
+  }
+
+  .landing-name {
+    font-size: 80px;
+  }
+
+  .pos {
+    font-size: 18px;
+  }
+
+  #intro-section {
+    height: 340vh;
+  }
+  .my-pic {
+    width: 80%;
+  }
+  .intro-wrapper {
+    margin: 80% auto auto auto;
+  }
+
+  .name {
+    font-size: 45px;
+  }
+
+  .intro-txt {
+    font-size: 18px;
+  }
+
+  #background-section {
+    height: 320vh;
+  }
+  .bg-wrapper {
+    width: 75%;
+  }
+
+  #skills-section {
+    height: 320vh;
+  }
+
+  .dev-wrapper,
+  .listed-wrapper {
+    width: 65%;
+    margin: 3% auto;
+  }
+
+  .dev-items {
+    margin: 5% auto;
+  }
+
+  #experience-section {
+    height: 280vh;
+  }
+
+  .exper-date {
+    top: -170px;
+  }
+
+  .date-left {
+    top: -150px;
+  }
+  .exper-divider {
+    top: 31%;
+  }
+
+  #projects-section {
+    height: 350vh;
+  }
+}
+
+/*  Mobile View ///////MODAL////////// Landscape */
+@media screen and (max-height: 450px) and (orientation: Landscape) {
+  .nav-wrapper li {
+    display: flex;
+    flex: column;
+    margin: 10% auto;
+  }
+
+  .modal-gallery {
+    height: 60%;
+    width: 90%;
+  }
+
+  .modal-gallery-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .modal-header {
+    flex-direction: row;
+    margin: 1% auto;
+  }
+
+  .modal-title {
+    display: flex;
+    margin: 0px auto;
+    font-size: 15px;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: left;
+
+    flex: 8;
+  }
+
+  .modal-buttons {
+    font-size: 15px;
+    /* flex: 0.4; */
+    width: 100%;
+    /* width: 100%; */
+
+    margin: 0px 2%;
+  }
+
+  .modal-descrip-wrapper p {
+    font-size: 10px;
+  }
+
+  .modal-gallery-img-saddam {
+    height: 90%;
+    width: 50%;
   }
 }
 
