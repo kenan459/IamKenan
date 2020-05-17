@@ -1093,7 +1093,7 @@ span {
 /* Low Res Laptop */
 @media screen and (max-height: 768px) {
   #skills-section {
-    height: 125vh;
+    height: 115vh;
   }
 
   #experience-section {
@@ -1288,7 +1288,7 @@ span {
   }
 
   #skills-section {
-    height: 190vh;
+    height: 290vh;
   }
 
   #skills-flex-wrapper {
