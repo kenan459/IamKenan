@@ -158,7 +158,7 @@ span {
   height: 3px;
   background-color: currentColor;
   margin: 5px;
-  transition: all 1s ease;
+  transition: all 300ms ease;
 }
 
 .landing-page-section {
@@ -1158,7 +1158,7 @@ span {
     align-items: center;
     transform: translateX(100%);
     opacity: 0;
-    transition: 350ms ease-in;
+    transition: 250ms ease-in;
   }
 
   .nav-wrapper li {
@@ -1256,7 +1256,7 @@ span {
   }
 
   #background-section {
-    height: 190vh;
+    height: 210vh;
     background-position: center;
   }
 
@@ -1266,7 +1266,7 @@ span {
   }
 
   .section-header {
-    margin: 10% auto;
+    margin: 20% auto;
     text-align: center;
   }
 
@@ -1289,7 +1289,7 @@ span {
   }
 
   #skills-section {
-    height: 150vh;
+    height: 170vh;
   }
 
   #skills-flex-wrapper {
@@ -1340,12 +1340,12 @@ span {
   }
 
   #experience-section {
-    height: 170vh;
+    height: 180vh;
   }
 
   .exper-header {
     font-size: 50px;
-    margin: 5% auto;
+    margin: 20% auto;
   }
 
   .exper-wrapper-details {
@@ -1407,7 +1407,7 @@ span {
   }
 
   .exper-divider {
-    top: 34%;
+    top: 40%;
     height: 650px;
   }
 
@@ -1433,7 +1433,7 @@ span {
   }
 
   .modal {
-    height: 90vh;
+    height: 85vh;
   }
 
   .modal-body {
