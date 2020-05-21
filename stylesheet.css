@@ -583,6 +583,11 @@ span {
   flex: 1;
 }
 
+.listed-header {
+  display: flex;
+  flex-direction: row;
+}
+
 .listed-icon {
   font-size: 25px;
   margin: auto 2%;
@@ -1298,7 +1303,10 @@ span {
   }
 
   .dev-header {
-    margin: 0% auto;
+    margin: 3% auto;
+  }
+
+  .skills-header {
   }
 
   .dev-items ul {
@@ -1319,7 +1327,7 @@ span {
   }
 
   .listed-header {
-    margin: auto auto auto 10%;
+    margin: auto 15%;
   }
 
   .listed-items ul {

@@ -43,7 +43,7 @@ function btnNavSlide() {
       link.style.animation = "";
     } else {
       link.style.animation = `navLinkFade 500ms ease forwards ${
-        index / 6 + 0.4
+        index / 9 + 0.1
       }s`;
 
       link.style.color = "white";
