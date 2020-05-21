@@ -9,37 +9,52 @@ setTimeout(function clearHeaderColor() {
   console.log("header cleared");
 }, 850);
 
+const burger = document.querySelector(".burger");
+const nav = document.querySelector(".nav-wrapper-links");
+const navLinks = document.querySelectorAll(".nav-wrapper-links a");
 //Burger
-const navSlide = () => {
-  const burger = document.querySelector(".burger");
-  const nav = document.querySelector(".nav-wrapper-links");
-  const navLinks = document.querySelectorAll(".nav-wrapper-links a");
 
+const navSlide = () => {
   burger.addEventListener("click", () => {
     //toggle nav
     nav.classList.toggle("nav-active");
-
+    btnNavSlide();
     //links animate
-    navLinks.forEach((link, index) => {
-      if (link.style.animation) {
-        link.style.animation = "";
-      } else {
-        link.style.animation = `navLinkFade 500ms ease forwards ${
-          index / 5 + 0.5
-        }s`;
+    // navLinks.forEach((link, index) => {
+    //   if (link.style.animation) {
+    //     link.style.animation = "";
+    //   } else {
+    //     link.style.animation = `navLinkFade 500ms ease forwards ${
+    //       index / 5 + 0.2
+    //     }s`;
 
-        link.style.color = "white";
-        console.log(index / 5 + 0.05);
-      }
-    });
+    //     link.style.color = "white";
+    //     // console.log(index / 5 + 0.05);
+    //   }
+    // });
     //Burger animate
     burger.classList.toggle("toggle");
   });
 };
 
+function btnNavSlide() {
+  navLinks.forEach((link, index) => {
+    if (link.style.animation) {
+      link.style.animation = "";
+    } else {
+      link.style.animation = `navLinkFade 500ms ease forwards ${
+        index / 6 + 0.4
+      }s`;
+
+      link.style.color = "white";
+      // console.log(index / 5 + 0.05);
+    }
+  });
+}
+
 navSlide();
 
-// Button Click
+// Nav Button Click
 function nav_introTrans() {
   setTimeout(function () {
     header.classList.remove("nav-scrolled-background");
@@ -71,8 +86,11 @@ buttons.forEach((btn) => {
   btn.addEventListener("click", function (e) {
     let x = e.clientX - e.target.offsetLeft;
     let y = e.clientY - e.target.offsetTop;
-    // let x = e.clientX - e.target.offsetLeft;
-    // let y = e.clientY - e.target.offsetTop;
+
+    nav.classList.toggle("nav-active");
+    burger.classList.toggle("toggle");
+
+    btnNavSlide();
 
     let ripples = document.createElement("span");
     ripples.style.left = x + "px";

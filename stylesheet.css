@@ -824,7 +824,7 @@ span {
 .modal-gallery {
   display: flex;
   margin: 1% auto auto auto;
-  background-color: rgb(47, 33, 94);
+  background-color: transparent;
   width: 95%;
   height: 77%;
   /* z-index: 15; */
@@ -1091,7 +1091,7 @@ span {
 /* Mobile View Begin */
 
 /* Low Res Laptop */
-@media screen and (max-height: 768px) {
+@media screen and (max-height: 768px) and (max-width: 1280) {
   #skills-section {
     height: 215vh;
   }
@@ -1200,11 +1200,12 @@ span {
   }
 
   .landing-wrapper {
-    left: 41%;
+    transform: translateY(-50%);
   }
 
   .landing-name {
     font-size: 45px;
+    color: red;
   }
 
   .pos {
@@ -1284,7 +1285,7 @@ span {
   }
 
   #skills-section {
-    height: 160vh;
+    height: 130vh;
   }
 
   #skills-flex-wrapper {
@@ -1328,6 +1329,7 @@ span {
 
   .listed-items li {
     margin: auto auto auto 25%;
+    text-align: left;
   }
 
   #experience-section {
@@ -1419,13 +1421,27 @@ span {
     width: 90%;
   }
 
+  .projs-wrapper:hover .inspect-icon {
+    transform: translateY(70%);
+  }
+
+  .modal {
+    height: 85vh;
+  }
+
+  .modal-body {
+    padding: 5px;
+    margin: auto auto;
+  }
+
   .modal-gallery {
-    width: 85%;
-    height: 25%;
+    width: 100%;
+    height: 30%;
   }
 
   .modal-gallery-img {
-    height: 60%;
+    height: 100%;
+    margin: 0px;
   }
 
   .modal-header {
