@@ -41,12 +41,13 @@ function btnNavSlide() {
   navLinks.forEach((link, index) => {
     if (link.style.animation) {
       link.style.animation = "";
+      link.style.color = "inherit";
     } else {
       link.style.animation = `navLinkFade 500ms ease forwards ${
         index / 9 + 0.1
       }s`;
-
       link.style.color = "white";
+
       // console.log(index / 5 + 0.05);
     }
   });
@@ -109,7 +110,7 @@ const section1 = document.querySelector(".landing-page-section");
 const section2 = document.querySelector("#intro-section");
 const section3 = document.querySelector("#background-section");
 const section4 = document.querySelector("#skills-section");
-const section5 = document.querySelector("#experience-section");
+const section5 = document.querySelector("#projects-section");
 
 const sectionScrollOptions = {
   rootMargin: "-10px 0px 0px 0px",
@@ -136,8 +137,8 @@ const section1Observer = new IntersectionObserver(function (
       header.classList.remove("nav-scrolled-intro");
       header.classList.remove("nav-scrolled-background");
       header.classList.remove("nav-scrolled-skills");
-      header.classList.remove("nav-scrolled-experience");
       header.classList.remove("nav-scrolled-projects");
+      header.classList.remove("nav-scrolled-experience");
     }
   });
 },
@@ -157,8 +158,8 @@ const section2Observer = new IntersectionObserver(function (
     } else {
       header.classList.remove("nav-scrolled-background");
       header.classList.remove("nav-scrolled-skills");
-      header.classList.remove("nav-scrolled-experience");
       header.classList.remove("nav-scrolled-projects");
+      header.classList.remove("nav-scrolled-experience");
     }
   });
 },
@@ -177,8 +178,8 @@ const section3Observer = new IntersectionObserver(function (
       header.classList.add("nav-scrolled-skills");
     } else {
       header.classList.remove("nav-scrolled-skills");
-      header.classList.remove("nav-scrolled-experience");
       header.classList.remove("nav-scrolled-projects");
+      header.classList.remove("nav-scrolled-experience");
     }
   });
 },
@@ -194,10 +195,10 @@ const section4Observer = new IntersectionObserver(function (
 ) {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
-      header.classList.add("nav-scrolled-experience");
+      header.classList.add("nav-scrolled-projects");
     } else {
-      header.classList.remove("nav-scrolled-experience");
       header.classList.remove("nav-scrolled-projects");
+      header.classList.remove("nav-scrolled-experience");
     }
   });
 },
@@ -213,9 +214,9 @@ const section5Observer = new IntersectionObserver(function (
 ) {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
-      header.classList.add("nav-scrolled-projects");
+      header.classList.add("nav-scrolled-experience");
     } else {
-      header.classList.remove("nav-scrolled-projects");
+      header.classList.remove("nav-scrolled-experience");
     }
   });
 },

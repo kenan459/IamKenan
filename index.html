@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
   <link defer rel="stylesheet" href="./stylesheet.css" />
+  <link defer rel="stylesheet" href="./media-stylesheet.css" />
   <script defer src="script.js"></script>
 </head>
 
@@ -25,8 +26,8 @@
       <li><a onclick="nav_introTrans()" class="nav-link" href="#intro-section">About</a></li>
       <li><a onclick="nav_backgTrans()" class="nav-link" href="#background-section">What I Do</a></li>
       <li><a onclick="nav_skillsTrans()" class="nav-link" href="#skills-section">Skills</a></li>
-      <li><a class="nav-link" href="#experience-section">Experience</a></li>
       <li><a class="nav-link" href="#projects-section">Projects</a></li>
+      <li><a class="nav-link" href="#experience-section">Experience</a></li>
 
     </ul>
 
@@ -143,7 +144,7 @@
             <div class="bg-row-header section-2nd-row">
               <i class="far fa-object-group works-icon"></i>
               <p class="bg-title">
-                Design
+                UI/UX Design
               </p>
             </div>
 
@@ -156,7 +157,7 @@
 
           <div class="bg-row-wrapper section-border-left ">
             <div class="bg-row-header section-2nd-row">
-              <i class="far fa-object-group works-icon"></i>
+              <i class="fas fa-chalkboard-teacher works-icon"></i>
               <p class="bg-title">
                 User Experience
               </p>
@@ -226,7 +227,7 @@
           <div class="listed-items">
             <ul>
               <li>
-                <img class="listed-icon-img" src="https://img.icons8.com/material-outlined/32/ffffff/adobe-photoshop" />
+                <i class="far fa-images listed-icon"></i>
                 <p class="img-item-text">Adobe Photoshop</p>
               </li>
               <li>
@@ -237,65 +238,14 @@
               <li><i class="fas fa-database listed-icon"></i>HeidiSQL</li>
               <li><i class="fab fa-github listed-icon"></i>Git + Github</li>
               <li>
-                <img class="listed-icon-img" src="https://img.icons8.com/windows/32/ffffff/visual-studio.png" />
+                <img class="listed-icon-img listed-icon" src="https://img.icons8.com/windows/32/ffffff/visual-studio.png" />
                 <p class="img-item-text">Visual Studio</p>
               </li>
-              <li>Visual Studio Code</li>
-              <li>SQL Server Management Studio</li>
+              <li><i class="fas fa-code listed-icon"></i>Visual Studio Code</li>
+              <li><i class="fas fa-server listed-icon"></i>SQL Server Management Studio</li>
             </ul>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="experience-section">
-    <div class="exper-section-overlay"></div>
-    <div class="exper-divider"></div>
-
-    <div class="exper-container container">
-      <p class="exper-header">Experience</p>
-
-      <div class="exper-wrapper-details">
-        <p class="exper-details">
-          I recently Graduated from the University of St. La Salle, completing my
-          Bachelor Science in Information Technology course. I'm currently doing
-          free lance projects with few clients that i've worked with before.
-        </p>
-
-        <p class="exper-details">
-          As a Developer, I always combine my technical knowledge with my keen
-          perception to create a top notch product. I've been doing web and
-          software development for about 5 years now, and i'm always eager to
-          learn more in this industry.
-        </p>
-      </div>
-
-      <div class="exper-flex-wrapper">
-        <div class="exper-wrapper">
-          <a href="https://www.hybrain.co/" class="exper-title link-hybrain" target="_blank">
-            HYBrain
-          </a>
-          <p class="exper-pos">
-            On The Job Training - Wordpress Editor
-          </p>
-          <div class="exper-descrip">
-            Assistant UI Designer of templates used for software development. Also
-            learned about database and server management on live deployment. Later
-            transitioned to web development for website optimization, upgrade and
-            content creation.
-          </div>
-        </div>
-
-        <div class="exper-date">November 2019 - March 2020</div>
-      </div>
-
-      <div class="exper-flex-wrapper">
-        <div class="exper-wrapper exper-wrap-short">
-          <p class="exper-title freelancing-txt">Freelancing</p>
-        </div>
-
-        <div class="exper-date date-left">Present</div>
       </div>
     </div>
   </div>
@@ -435,12 +385,62 @@
     </div>
   </div>
 
+  <div id="experience-section">
+    <div class="exper-section-overlay"></div>
+    <div class="exper-divider"></div>
 
+    <div class="exper-container container">
+      <p class="exper-header">Experience</p>
 
+      <div class="exper-wrapper-details">
+        <p class="exper-details">
+          I recently Graduated from the University of St. La Salle, completing my
+          Bachelor Science in Information Technology course. I'm currently doing
+          free lance projects with few clients that i've worked with before.
+        </p>
 
+        <p class="exper-details">
+          As a Developer, I always combine my technical knowledge with my keen
+          perception to create a top notch product. I've been doing web and
+          software development for about 5 years now, and i'm always eager to
+          learn more in this industry.
+        </p>
+      </div>
 
+      <div class="exper-flex-wrapper">
+        <div class="exper-wrapper">
+          <a href="https://www.hybrain.co/" class="exper-title link-hybrain" target="_blank">
+            HYBrain
+          </a>
+          <p class="exper-pos">
+            On The Job Training - Wordpress Editor
+          </p>
+          <div class="exper-descrip">
+            Assistant UI Designer of templates used for software development. Also
+            learned about database and server management on live deployment. Later
+            transitioned to web development for website optimization, upgrade and
+            content creation.
+          </div>
+        </div>
 
+        <div class="exper-date">November 2019 - March 2020</div>
+      </div>
 
+      <div class="exper-flex-wrapper">
+        <div class="exper-wrapper exper-wrap-short">
+          <p class="exper-title freelancing-txt">Freelancing</p>
+        </div>
+
+        <div class="exper-date date-left">Present</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact-section">
+    <div id="contact-container" class="container">
+      
+    </div>
+  </div>
 
 
 </body>
