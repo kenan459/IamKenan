@@ -329,10 +329,13 @@ span {
 }
 
 .section-header {
-  margin: auto auto 7% auto;
+  margin: auto auto 7% 0px;
   font-weight: bold;
   font-size: 50px;
   font-family: "Playfair Display", sans-serif;
+  border-bottom: solid 2px rgb(0, 26, 255);
+  width: 15%;
+  text-align: center;
 }
 
 #intro-section {
@@ -495,8 +498,9 @@ span {
 }
 
 .works-icon {
-  font-size: 40px;
+  font-size: 30px;
   margin: auto 1.5%;
+  color: rgb(255, 255, 255);
 }
 
 .bg-title {
@@ -528,6 +532,11 @@ span {
   margin: auto;
 }
 
+.section-skills-header {
+  border-bottom: solid 2px rgb(0, 26, 255);
+  width: 10%;
+}
+
 .skills-header {
   /* margin: 0px auto 30px auto; */
   font-size: 30px;
@@ -537,6 +546,7 @@ span {
 .skills-icon {
   font-size: 30px;
   margin: auto 1.5%;
+  color: rgb(185, 185, 185);
 }
 
 .dev-wrapper {
@@ -641,14 +651,17 @@ span {
   font-size: 65px;
   color: rgb(27, 0, 149);
   margin: auto auto 5% auto;
+  border-top: solid 1px rgb(0, 0, 0);
+  border-bottom: solid 1px rgb(0, 0, 0);
+  width: 60%;
 }
 
 .exper-details {
-  text-align: center;
+  text-align: justify;
   padding: 5px;
   font-size: 19px;
   width: 50%;
-  margin: auto 1%;
+  margin: 0px 1%;
   color: rgb(0, 12, 113);
 
   /* -webkit-text-stroke-width: 1.1px;
@@ -919,7 +932,7 @@ span {
   font-size: 12px;
   padding: 5px;
   color: rgba(190, 190, 190, 0.836);
-  margin: auto 1%;
+  margin: auto 5px;
   border: solid 0.8px rgba(58, 58, 58, 0.705);
   border-radius: 3px;
 }
@@ -952,8 +965,10 @@ span {
 .projects-header {
   font-family: "Playfair Display", sans-serif;
   text-align: center;
-  font-size: 65px;
+  font-size: 60px;
   margin: auto auto 5% auto;
+  width: 50%;
+  border-bottom: solid 2px rgb(0, 26, 255);
 }
 
 .projs-flex-wrapper {
