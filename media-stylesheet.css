@@ -37,6 +37,7 @@
     justify-content: space-between;
     height: 9vh;
     width: 100%;
+    margin: auto;
     position: fixed;
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.274);

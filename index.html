@@ -20,14 +20,14 @@
 
 <header>
   <nav class="nav-wrapper">
-    <div class="nav-title"><a href="#landing-page">I am Kenan</a></div>
+    <div class="nav-title" class="nav-link"><a onclick="nav_home()">I am Kenan</a></div>
     <ul class="nav-wrapper-links">
-      <li><a class="nav-link" href="#landing-page">Home</a></li>
-      <li><a onclick="nav_introTrans()" class="nav-link" href="#intro-section">About</a></li>
-      <li><a onclick="nav_backgTrans()" class="nav-link" href="#background-section">What I Do</a></li>
-      <li><a onclick="nav_skillsTrans()" class="nav-link" href="#skills-section">Skills</a></li>
-      <li><a class="nav-link" href="#projects-section">Projects</a></li>
-      <li><a class="nav-link" href="#experience-section">Experience</a></li>
+      <li><a onclick="nav_home()" class="nav-link">Home</a></li>
+      <li><a onclick="nav_intro()" class="nav-link" >About</a></li>
+      <li><a onclick="nav_backg()" class="nav-link">What I Do</a></li>
+      <li><a onclick="nav_skills()" class="nav-link">Skills</a></li>
+      <li><a onclick="nav_projects()" class="nav-link">Projects</a></li>
+      <li><a onclick="nav_experience()" class="nav-link">Experience</a></li>
 
     </ul>
 
@@ -46,15 +46,15 @@
   <div id="landing-page" class="landing-page-section">
     <div class="landing-wrapper">
       <div class="landing-name-wrapper">
-        <div class="landing-name">
-          <b class="highlight-name-landing">Kenan</b> Serran
+        <div class="landing-name landing-name-animate">
+          <b class="highlight-name-landing ">Kenan</b> Serran
         </div>
       </div>
 
-      <div class="landing-bar"></div>
+      <div class="landing-bar landing-bar-load"></div>
 
       <div class="pos-wrapper">
-        <p class="pos">Web Developer | Software Developer</p>
+        <p class="pos landing-pos-load">Web Developer | Software Developer</p>
       </div>
     </div>
   </div>

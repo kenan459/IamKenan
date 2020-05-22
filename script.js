@@ -2,6 +2,7 @@
 const header = document.querySelector(".nav-wrapper");
 
 setTimeout(function clearHeaderColor() {
+  header.classList.remove("nav-scrolled-intro");
   header.classList.remove("nav-scrolled-background");
   header.classList.remove("nav-scrolled-skills");
   header.classList.remove("nav-scrolled-experience");
@@ -56,31 +57,39 @@ function btnNavSlide() {
 navSlide();
 
 // Nav Button Click
-function nav_introTrans() {
-  setTimeout(function () {
-    header.classList.remove("nav-scrolled-background");
-    header.classList.remove("nav-scrolled-skills");
-    header.classList.remove("nav-scrolled-experience");
-    header.classList.remove("nav-scrolled-projects");
-    header.classList.add("nav-scrolled-intro");
-  }, 500);
+const landing_name = document.querySelector(".landing-name");
+const landing_bar = document.querySelector(".landing-bar");
+const landing_pos = document.querySelector(".pos");
+
+function nav_home() {
+  section1.scrollIntoView();
+  landing_name.classList.toggle("landing-name-animate");
+  landing_bar.classList.toggle("landing-bar-load");
+  landing_pos.classList.toggle("landing-pos-load");
+
+  setTimeout(() => {
+    landing_name.classList.toggle("landing-name-animate");
+    landing_bar.classList.toggle("landing-bar-load");
+    landing_pos.classList.toggle("landing-pos-load");
+  }, 10);
+}
+function nav_intro() {
+  section2.scrollIntoView();
+}
+function nav_backg() {
+  section3.scrollIntoView();
+}
+function nav_skills() {
+  section4.scrollIntoView();
+}
+function nav_projects() {
+  section5.scrollIntoView();
+}
+function nav_experience() {
+  section6.scrollIntoView();
 }
 
-function nav_backgTrans() {
-  setTimeout(function () {
-    header.classList.remove("nav-scrolled-skills");
-    header.classList.remove("nav-scrolled-experience");
-    header.classList.remove("nav-scrolled-projects");
-    header.classList.add("nav-scrolled-background");
-  }, 800);
-}
-
-function nav_skillsTrans() {
-  setTimeout(function () {
-    header.classList.remove("nav-scrolled-experience");
-    header.classList.remove("nav-scrolled-projects");
-  }, 800);
-}
+//Link Effects
 
 const buttons = document.querySelectorAll("a");
 buttons.forEach((btn) => {
@@ -88,10 +97,15 @@ buttons.forEach((btn) => {
     let x = e.clientX - e.target.offsetLeft;
     let y = e.clientY - e.target.offsetTop;
 
-    nav.classList.toggle("nav-active");
-    burger.classList.toggle("toggle");
-
-    btnNavSlide();
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+      console.log("mobile");
+      nav.classList.toggle("nav-active");
+      burger.classList.toggle("toggle");
+      btnNavSlide();
+    } else {
+      console.log("desktop");
+    }
 
     let ripples = document.createElement("span");
     ripples.style.left = x + "px";
@@ -111,6 +125,7 @@ const section2 = document.querySelector("#intro-section");
 const section3 = document.querySelector("#background-section");
 const section4 = document.querySelector("#skills-section");
 const section5 = document.querySelector("#projects-section");
+const section6 = document.querySelector("#experience-section");
 
 const sectionScrollOptions = {
   rootMargin: "-10px 0px 0px 0px",

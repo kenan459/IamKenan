@@ -64,7 +64,7 @@ body {
 .nav-title {
   display: flex;
   letter-spacing: 5px;
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
   align-items: center;
   justify-content: center;
@@ -90,8 +90,8 @@ body {
   position: relative;
   text-decoration: none;
   letter-spacing: 1px;
-  color: inherit;
 
+  cursor: pointer;
   transition: 350ms ease-in;
   /* background: red;
   border-radius: 50%; */
@@ -120,7 +120,7 @@ span {
   }
 }
 
-.nav-wrapper a:hover {
+.nav-link a:hover {
   color: rgb(0, 225, 255);
 }
 
@@ -213,10 +213,12 @@ span {
   letter-spacing: 6px;
   /* font-weight: bold; */
   color: white;
-
   font-family: "Playfair Display", sans-serif;
   position: relative;
   visibility: hidden;
+}
+
+.landing-name-animate {
   animation: normal var(--landing-time) landing-name-anim;
   animation-fill-mode: forwards;
   animation-delay: 1000ms;
@@ -260,8 +262,11 @@ span {
   background: currentColor;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  animation: ease-in-out 1200ms landing-bar-anim;
   color: rgb(255, 255, 255);
+}
+
+.landing-bar-load::after {
+  animation: ease-in-out 1200ms landing-bar-anim;
   animation-delay: 500ms;
 }
 
@@ -298,6 +303,9 @@ span {
   font-size: 20px;
   color: rgb(9, 0, 80);
   visibility: hidden;
+}
+
+.landing-pos-load {
   animation: normal var(--landing-time) pos-anim;
   animation-fill-mode: forwards;
   animation-delay: 1000ms;
