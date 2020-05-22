@@ -30,39 +30,50 @@
   }
 }
 
-/* 
-  @media screen and (max-height: 768px) and (max-width: 1024px) {
-    body {
-      opacity: 0.5;
-    }
-  } */
-
-/* @media screen and (max-width: 1300px) {
-    .nav-wrapper ul {
-      width: 50%;
-    }
-  
-    .landing-name {
-      font-size: 80px;
-    }
-  
-    .pos {
-      font-size: 15px;
-    }
-  
-    .proj-img-saddam {
-      display: flex;
-      object-fit: cover;
-      background-size: contain;
-      margin: 1% auto;
-      width: 60%;
-      height: 95%;
-      z-index: -1;
-    }
-  } */
-
 /* Ipad-Mobile Res */
 @media screen and (max-width: 1024px) {
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 9vh;
+    width: 100%;
+    position: fixed;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.274);
+    transition: 550ms ease-in;
+    z-index: 10;
+  }
+
+  .nav-scrolled-intro {
+    height: 7vh;
+    color: rgb(255, 255, 255);
+    background-color: rgb(33, 0, 141);
+    box-shadow: 0 3px 20px rgba(44, 44, 44, 0.2);
+  }
+
+  .nav-scrolled-background {
+    background-color: rgba(47, 47, 47, 0.212);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-scrolled-skills {
+    color: rgb(96, 205, 255);
+    background-color: rgb(61, 61, 61);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-scrolled-projects {
+    color: rgb(255, 255, 255);
+    background-color: rgb(9, 0, 133);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-scrolled-experience {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  }
+
   .nav-wrapper-links {
     position: absolute;
     right: 0px;
