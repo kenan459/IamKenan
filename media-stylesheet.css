@@ -1,35 +1,5 @@
 /* Mobile View Begin */
 
-/* Low Res Laptop */
-@media screen and (min-height: 720px) and (min-width: 1280px) and (orientation: Landscape) and (max-width: 1366px) {
-  /* body {
-      opacity: 0.8;
-    } */
-  #skills-section {
-    height: 120vh;
-  }
-
-  .listed-items li {
-    text-align: left;
-  }
-
-  #experience-section {
-    height: 200vh;
-  }
-
-  .exper-wrap-short {
-    width: 50%;
-  }
-
-  #projects-section {
-    height: 250vh;
-  }
-
-  .modal-gallery {
-    height: 70%;
-  }
-}
-
 /* Ipad-Mobile Res */
 @media screen and (max-width: 1024px) {
   .nav-wrapper {
@@ -144,7 +114,7 @@
   }
 
   .pos {
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 1px;
   }
 
@@ -231,10 +201,17 @@
     height: 160vh;
   }
 
+  .section-skills-header {
+    width: 50%;
+  }
+
   #skills-flex-wrapper {
     flex-direction: column;
     margin: 0;
     width: 100%;
+  }
+
+  .skills-header {
   }
 
   .bg-descrip {
@@ -252,10 +229,6 @@
 
   .dev-header {
     margin: 3% auto;
-  }
-
-  .section-skills-header {
-    width: 50%;
   }
 
   .dev-items ul {
@@ -281,15 +254,17 @@
 
   .listed-items ul {
     margin: 5% auto;
+    line-height: 500px;
   }
 
   .listed-items li {
-    font-size: 16px;
+    font-size: 13px;
     /* margin: auto auto auto 20%; */
     margin: auto auto;
+    align-items: center;
     width: 60%;
     text-align: left;
-    line-height: 15px;
+    line-height: 28px;
   }
 
   #experience-section {
@@ -378,15 +353,33 @@
     margin: 20% auto;
     font-size: 32px;
     width: 100%;
-    border-width: 1.5px;
+    border-width: 2px;
   }
 
   .projs-wrapper {
     width: 90%;
   }
 
+  .inspect-icon {
+    font-size: 30px;
+  }
+
+  #inspect-bar {
+    height: 15%;
+    bottom: -15%;
+  }
+
+  .projs-wrapper:hover #inspect-bar {
+    transform: translate(0%, -100%);
+  }
+
   .projs-wrapper:hover .inspect-icon {
-    transform: translateY(70%);
+    transform: translateY(120%);
+  }
+
+  .close-button {
+    top: 5px;
+    font-size: 25px;
   }
 
   .modal {
@@ -442,6 +435,69 @@
 
   .modal-tech {
     margin: 5% auto;
+  }
+
+  #contact-section {
+    height: 30vh;
+  }
+
+  #contact-flex-wrapper {
+    margin: 2% auto;
+  }
+
+  .contact-header {
+    width: 100%;
+  }
+
+  .contact-wrapper {
+    margin: 5% auto;
+  }
+
+  .email-header {
+    margin: 0px auto;
+    width: 70%;
+  }
+
+  .email-text {
+    width: 70%;
+  }
+
+  .contact-wrapper {
+    width: 90%;
+  }
+
+  .icon-row a {
+    margin: auto 20%;
+  }
+}
+
+/* Low Res Laptop */
+@media screen and (min-height: 720px) and (min-width: 1280px) and (orientation: Landscape) and (max-width: 1366px) {
+  /* body {
+      opacity: 0.8;
+    } */
+  #skills-section {
+    height: 120vh;
+  }
+
+  .listed-items li {
+    text-align: left;
+  }
+
+  #experience-section {
+    height: 200vh;
+  }
+
+  .exper-wrap-short {
+    width: 50%;
+  }
+
+  #projects-section {
+    height: 250vh;
+  }
+
+  .modal-gallery {
+    height: 70%;
   }
 }
 

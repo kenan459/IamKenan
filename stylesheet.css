@@ -550,6 +550,7 @@ span {
   /* margin: 0px auto 30px auto; */
   font-size: 30px;
   font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .skills-icon {
@@ -571,6 +572,8 @@ span {
 
 .dev-header {
   display: flex;
+  justify-content: center;
+  margin: 0px auto 0px 70px;
   /* margin: 0px 0px 30px 0px; */
 }
 
@@ -608,7 +611,7 @@ span {
 }
 
 .listed-icon {
-  font-size: 25px;
+  font-size: 22px;
   margin: auto 2%;
 }
 
@@ -989,6 +992,7 @@ span {
   /* height: 100vh; */
   margin: auto;
   /* border: 2px solid rgba(216, 101, 101, 0.5); */
+
   box-shadow: 0 3px 20px rgba(44, 44, 44, 0.2);
 }
 
@@ -1112,7 +1116,154 @@ span {
 
 #contact-section {
   display: flex;
-  background-color: rgb(8, 0, 119);
-  height: 50vh;
+  background-color: rgb(32, 32, 32);
+  height: 25vh;
   color: white;
+}
+
+#contact-container {
+  display: flex;
+  margin: 1% auto;
+  width: 90%;
+  flex-direction: column;
+}
+
+.highlight-text {
+  color: rgb(49, 0, 211);
+}
+
+.contact-icon {
+  color: rgb(206, 206, 206);
+}
+
+.contact-header {
+  font-family: "Poppins", sans-serif;
+  /* text-transform: uppercase; */
+  width: 20%;
+  text-align: center;
+  justify-content: center;
+  font-size: 25px;
+  margin: 0% auto;
+  border-bottom: solid 1px rgb(255, 255, 255);
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 1% auto 0px auto;
+}
+
+.email-header {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 18px;
+  width: 15%;
+  margin: 0px auto;
+  /* width: 100%; */
+}
+
+.email-text {
+  margin: auto;
+  text-align: center;
+  font-size: 16px;
+  border: solid 2px rgba(58, 58, 58, 0.705);
+  padding: 5px;
+  width: 15%;
+  border-radius: 3px;
+}
+
+.icon-row {
+  display: flex;
+  margin: 1% auto 0px auto;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+
+.icon-row a {
+  display: flex;
+  margin: auto 5%;
+}
+
+.link-icon {
+  font-size: 45px;
+  margin: auto 10%;
+  cursor: pointer;
+  transition: all ease-in 250ms;
+  border-radius: 2px;
+  color: rgb(126, 126, 126);
+  /* height: 44px; */
+}
+
+.fb-icon {
+  /* color: white; */
+}
+
+.link-icon:hover {
+  animation: icon-hover 550ms ease-in forwards;
+}
+
+.instagram-icon {
+}
+
+.fb-icon:hover {
+  color: rgb(45, 0, 194);
+  background-color: rgb(255, 255, 255);
+}
+
+.instagram-icon:hover {
+  color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(122, 29, 184, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(122, 29, 184, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(122, 29, 184, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7a1db8",endColorstr="#fcb045",GradientType=1);
+}
+
+.linkedin-icon:hover {
+  color: rgb(0, 99, 180);
+  background-color: rgb(255, 255, 255);
+}
+
+@keyframes icon-hover {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  15% {
+    transform: rotate(10deg);
+  }
+
+  35% {
+    transform: rotate(-10deg);
+  }
+
+  55% {
+    transform: rotate(10deg);
+  }
+
+  75% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
