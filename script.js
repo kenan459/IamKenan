@@ -88,6 +88,9 @@ function nav_projects() {
 function nav_experience() {
   section6.scrollIntoView();
 }
+function nav_contact() {
+  section7.scrollIntoView();
+}
 
 //Link Effects
 
@@ -126,6 +129,7 @@ const section3 = document.querySelector("#background-section");
 const section4 = document.querySelector("#skills-section");
 const section5 = document.querySelector("#projects-section");
 const section6 = document.querySelector("#experience-section");
+const section7 = document.querySelector("#contact-section");
 
 const sectionScrollOptions = {
   rootMargin: "-10px 0px 0px 0px",
