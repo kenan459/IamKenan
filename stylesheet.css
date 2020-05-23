@@ -513,6 +513,7 @@ span {
 
 .bg-title {
   font-size: 23px;
+  letter-spacing: 2px;
   font-weight: bold;
   margin: auto 0%;
   text-transform: uppercase;
