@@ -441,8 +441,8 @@
     height: 30vh;
   }
 
-  #contact-flex-wrapper {
-    margin: 2% auto;
+  #contact-container {
+    margin: 5% auto;
   }
 
   .contact-header {
