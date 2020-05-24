@@ -73,6 +73,7 @@ function nav_home() {
     landing_pos.classList.toggle("landing-pos-load");
   }, 10);
 }
+
 function nav_intro() {
   section2.scrollIntoView();
 }
@@ -244,6 +245,10 @@ sectionScrollOptions);
 section5Observer.observe(section5);
 
 // Modals
+
+function lmnhsDemo() {
+  window.open("http://www.lmnhs-demo.tk/");
+}
 
 const openModalButtons = document.querySelectorAll("[data-modal-target]");
 const closeModalButtons = document.querySelectorAll("[data-close-button]");
