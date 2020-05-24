@@ -472,6 +472,10 @@
     width: 90%;
   }
 
+  .icon-row {
+    transform: translateX(-20%);
+  }
+
   .icon-row a {
     margin: auto 20%;
   }

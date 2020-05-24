@@ -1186,6 +1186,7 @@ span {
   justify-content: center;
   align-items: center;
   width: 10%;
+  transform: translateX(-3%);
 }
 
 .icon-row a {
@@ -1194,7 +1195,7 @@ span {
 }
 
 .link-icon {
-  font-size: 45px;
+  font-size: 50px;
   margin: auto 10%;
   cursor: pointer;
   transition: all ease-in 250ms;
