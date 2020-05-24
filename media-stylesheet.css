@@ -66,7 +66,7 @@
   .nav-wrapper li {
     display: flex;
     flex: column;
-    margin: 20% auto;
+    margin: 15% auto;
   }
 
   .nav-link {
@@ -450,7 +450,7 @@
   }
 
   .contact-header {
-    width: 100%;
+    width: 70%;
   }
 
   .contact-wrapper {
@@ -460,10 +460,12 @@
   .email-header {
     margin: 0px auto;
     width: 70%;
+    font-size: 16px;
   }
 
   .email-text {
     width: 70%;
+    font-size: 14px;
   }
 
   .contact-wrapper {
