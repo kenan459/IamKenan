@@ -246,8 +246,28 @@ section5Observer.observe(section5);
 
 // Modals
 
+//Demo/Code Btns
+
 function lmnhsDemo() {
   window.open("http://www.lmnhs-demo.tk/");
+}
+
+function lmnhsCode() {
+  window.open(
+    "https://github.com/kenan459/Portfolio-Projects/blob/master/Guidance_System_Demo.zip"
+  );
+}
+
+function saddamDemo() {
+  alert(
+    "Saddams Shawarma is a Desktop Application, you have to download the zip from my Git Hub repositories if you wish to test it."
+  );
+}
+
+function saddamCode() {
+  window.open(
+    "https://github.com/kenan459/Portfolio-Projects/blob/master/Saddams%20Shawarma%202.8%20Demo.zip"
+  );
 }
 
 const openModalButtons = document.querySelectorAll("[data-modal-target]");

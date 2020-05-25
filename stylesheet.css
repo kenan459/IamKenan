@@ -1133,7 +1133,7 @@ span {
 }
 
 .highlight-text {
-  color: rgb(49, 0, 211);
+  color: rgb(48, 0, 207);
 }
 
 .contact-icon {
@@ -1148,7 +1148,7 @@ span {
   justify-content: center;
   font-size: 25px;
   margin: 0% auto;
-  border-bottom: solid 1px rgb(255, 255, 255);
+  border-bottom: solid 2px rgb(87, 87, 87);
 }
 
 .contact-wrapper {
