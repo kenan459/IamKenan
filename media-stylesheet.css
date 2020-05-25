@@ -318,7 +318,7 @@
   }
 
   .date-left {
-    top: -140px;
+    top: -110px;
     left: 60%;
     font-size: 20px;
   }
@@ -329,7 +329,7 @@
     position: relative;
     top: 0%;
     left: 0%;
-    height: 150px;
+    height: 110px;
     text-align: center;
   }
 
@@ -481,11 +481,245 @@
   }
 }
 
+@media screen and (max-width: 375px) {
+  .nav-wrapper {
+    height: 8vh;
+  }
+
+  #intro-section {
+    height: 210vh;
+  }
+
+  .intro-wrapper {
+    margin: 350px auto auto auto;
+  }
+
+  #background-section {
+    height: 200vh;
+  }
+
+  #skills-section {
+    height: 170vh;
+  }
+
+  .dev-items ul {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .dev-items li {
+    font-size: 9px;
+  }
+
+  .listed-items li {
+    font-size: 11px;
+  }
+  #projects-section {
+    height: 140vh;
+  }
+
+  .projects-header {
+    font-size: 26px;
+  }
+
+  #experience-section {
+    height: 190vh;
+  }
+
+  .exper-divider {
+    top: 45%;
+    height: 600px;
+  }
+
+  .exper-title {
+    font-size: 28px;
+  }
+
+  .exper-date {
+    font-size: 12px;
+    width: 40%;
+    top: -310px;
+  }
+
+  .date-left {
+    top: -110px;
+  }
+
+  #contact-section {
+    height: 34vh;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .landing-name {
+    font-size: 40px;
+  }
+
+  .pos {
+    font-size: 12px;
+  }
+
+  #background-section {
+    height: 220vh;
+  }
+
+  .dev-items ul {
+    padding: 0px;
+    margin: 1% 0px;
+  }
+
+  .exper-date {
+    top: -350px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .landing-name {
+    font-size: 35px;
+  }
+
+  .pos {
+    font-size: 11px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  #intro-section {
+    height: 230vh;
+  }
+
+  .intro-wrapper {
+    margin: 280px auto auto auto;
+  }
+
+  .intro-txt {
+    font-size: 14px;
+  }
+
+  #background-section {
+    height: 220vh;
+  }
+
+  .section-header {
+    font-size: 32px;
+  }
+
+  .bg-title {
+    font-size: 14px;
+  }
+
+  .softdev-txt {
+    font-size: 12px;
+  }
+
+  .bg-descrip {
+    font-size: 12px;
+  }
+
+  .skills-header {
+    font-size: 18px;
+  }
+
+  .dev-items ul {
+    margin: 0px 0px 5% 0px;
+  }
+
+  .dev-items li {
+    --item-size: 60px;
+    font-size: 8px;
+  }
+
+  .listed-items li {
+    width: 75%;
+  }
+
+  .listed-text {
+    font-size: 12px;
+  }
+
+  .projects-header {
+    font-size: 22px;
+  }
+
+  #experience-section {
+    height: 200vh;
+  }
+
+  .exper-divider {
+    top: 44%;
+    height: 550px;
+  }
+
+  .exper-header {
+    font-size: 34px;
+  }
+
+  .exper-details {
+    font-size: 13px;
+  }
+
+  .exper-title {
+    font-size: 26px;
+  }
+
+  .exper-pos {
+    font-size: 11px;
+  }
+
+  .exper-date {
+    top: -265px;
+    font-size: 11px;
+  }
+
+  .exper-descrip {
+    font-size: 12px;
+  }
+
+  .date-left {
+    top: -105px;
+  }
+
+  .freelancing-txt {
+    font-size: 22px;
+  }
+
+  #contact-section {
+    height: 37vh;
+  }
+
+  .contact-header {
+    font-size: 22px;
+  }
+
+  .email-text {
+    width: 80%;
+  }
+}
+
 /* Low Res Laptop */
 @media screen and (min-height: 720px) and (min-width: 1280px) and (orientation: Landscape) and (max-width: 1366px) {
   /* body {
       opacity: 0.8;
     } */
+
+  .nav-wrapper ul {
+    width: 50%;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .name {
+    font-size: 40px;
+  }
+
+  .section-header {
+    font-size: 32px;
+  }
+
   #skills-section {
     height: 120vh;
   }
@@ -502,12 +736,28 @@
     width: 50%;
   }
 
+  .projects-header {
+    font-size: 42px;
+  }
+
   #projects-section {
     height: 250vh;
   }
 
   .modal-gallery {
     height: 70%;
+  }
+
+  .email-text {
+    width: 20%;
+  }
+
+  .icon-row {
+    margin: 10px auto;
+  }
+
+  .link-icon {
+    font-size: 38px;
   }
 }
 
