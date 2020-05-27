@@ -307,4 +307,8 @@ function closeModal(modal) {
   overlay.classList.remove("active");
 }
 
-alert(`Screen Width: ${screen.width} \nScreen Height: ${screen.height}`);
+alert(
+  `Screen Width: ${screen.width}\nScreen Height: ${screen.height}\n
+  Window Width: ${window.outerWidth}\nWindow Height: ${window.outerHeight}\n
+  Content Width: ${window.outerWidth}\nContent Height: ${window.outerHeight}`
+);
