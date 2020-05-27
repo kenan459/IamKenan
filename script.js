@@ -306,3 +306,5 @@ function closeModal(modal) {
   modal.classList.remove("active");
   overlay.classList.remove("active");
 }
+
+alert(`Screen Width: ${screen.width} \nScreen Height: ${screen.height}`);
