@@ -481,14 +481,6 @@
   }
 }
 
-/*397x593*/
-@media screen and (max-width: 397px) {
-  #intro-section {
-    height: 250vh;
-    color: rgb(186, 255, 159);
-  }
-}
-
 @media screen and (max-width: 375px) {
   .nav-wrapper {
     height: 8vh;
