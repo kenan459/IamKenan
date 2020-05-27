@@ -310,5 +310,5 @@ function closeModal(modal) {
 alert(
   `Screen Width: ${screen.width}\nScreen Height: ${screen.height}\n
   Window Width: ${window.outerWidth}\nWindow Height: ${window.outerHeight}\n
-  Content Width: ${window.outerWidth}\nContent Height: ${window.outerHeight}`
+  Content Width: ${window.innerWidth}\nContent Height: ${window.innerHeight}`
 );

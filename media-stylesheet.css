@@ -128,11 +128,12 @@
 
   .intro-flex-wrapper {
     flex-direction: column;
+    margin-top: 110%;
   }
 
   .intro-wrapper {
     width: 100%;
-    margin: 350px auto auto auto;
+    margin: auto auto auto auto;
   }
 
   .name {
@@ -340,8 +341,8 @@
   }
 
   .exper-divider {
-    top: 40%;
-    height: 650px;
+    top: 43%;
+    height: 600px;
   }
 
   #projects-section {
@@ -491,7 +492,7 @@
   }
 
   .intro-wrapper {
-    margin: 350px auto auto auto;
+    /* margin: 350px auto auto auto; */
   }
 
   #background-section {
@@ -552,7 +553,7 @@
 
 @media screen and (max-width: 360px) {
   #intro-section {
-    max-height: 175vh;
+    max-height: 220vh;
   }
 
   .landing-name {
@@ -595,7 +596,7 @@
   }
 
   .intro-wrapper {
-    margin: 280px auto auto auto;
+    /* margin: 280px auto auto auto; */
   }
 
   .intro-txt {
