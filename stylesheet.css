@@ -675,7 +675,7 @@ span {
 .exper-details {
   text-align: justify;
   padding: 5px;
-  font-size: 19px;
+  font-size: 18px;
   width: 50%;
   margin: 0px 1%;
   color: rgb(0, 12, 113);
@@ -761,7 +761,7 @@ span {
 
 .exper-title {
   /* margin: auto; */
-  font-size: 40px;
+  font-size: 30px;
   color: rgb(0, 195, 255);
 }
 
@@ -1022,7 +1022,7 @@ span {
   justify-content: center;
   z-index: 10;
   transition: 250ms ease-in;
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .projs-wrapper:hover .inspect-icon {
